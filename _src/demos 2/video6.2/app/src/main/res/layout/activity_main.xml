@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/activity_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="40dp">
+
+	<CheckBox
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Checkbox for testing"/>
+
+	<Button
+		android:id="@+id/btnStartStartedService"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="100dp"
+		android:onClick="startBackgroundService"
+		android:text="Start Background Service"/>
+
+	<Button
+		android:id="@+id/btnStopStartedService"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/btnStartStartedService"
+		android:onClick="stopBackgroundService"
+		android:text="Stop Background Service"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:onClick="startIntentService"
+		android:text="Start Intent Service"
+		android:id="@+id/button"/>
+
+	<TextView
+		android:id="@+id/txvResults"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/button"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="14dp"
+		android:textColor="#000"
+		android:textSize="16sp"
+		android:text="Result to display"/>
+
+	<Button
+		android:id="@+id/button2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/txvResults"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="47dp"
+		android:onClick="startJobIntentService"
+		android:text="Start JobIntentService"/>
+
+</RelativeLayout>
